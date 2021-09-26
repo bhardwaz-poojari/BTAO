@@ -1,0 +1,2053 @@
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.thumb {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("DDD.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.thum {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thum a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("http://thecodeplayer.com/u/m/i1.png");
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thum:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thum a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thum a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thum a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thum:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.AB {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.AB a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_211421.png");
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.AB:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.AB a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.AB a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.AB a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.AB:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.BC {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.BC a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_211502.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.BC:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.BC a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.BC a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.BC a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.BC:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.CD {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.CD a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_211541.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.CD:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.CD a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.CD a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.CD a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.CD:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.DE {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.DE a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_211614.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.DE:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.DE a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.DE a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.DE a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.DE:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*EFnail Background*/
+.EF {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.EF a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_212246.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.EF:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.EF a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.EF a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.EF a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.EF:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.FG {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.FG a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_213114.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.FG:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.FG a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.FG a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.FG a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.FG:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.GH {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.GH a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_213127.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.GH:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.GH a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.GH a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.GH a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.GH:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.HI {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.HI a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_213153.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.HI:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.HI a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.HI a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.HI a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.HI:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.IJ {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.IJ a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_213244.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.IJ:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.IJ a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.IJ a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.IJ a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.IJ:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.JK {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.JK a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_214610.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.JK:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.JK a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.JK a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.JK a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.JK:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.KL {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.KL a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_215706.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.KL:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.KL a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.KL a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.KL a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.KL:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.LM {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.LM a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_220430.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.LM:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.LM a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.LM a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.LM a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.LM:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.MN {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.MN a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_220447.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.MN:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.MN a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.MN a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.MN a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.MN:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.NO {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.NO a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_220529.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.NO:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.NO a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.NO a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.NO a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.NO:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.OP {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.OP a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_220545.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.OP:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.OP a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.OP a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.OP a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.OP:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.PQ {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.PQ a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_220609.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.PQ:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.PQ a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.PQ a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.PQ a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.PQ:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.QR {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.QR a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_220955.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.QR:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.QR a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.QR a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.QR a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.QR:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.RS {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.RS a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_221519.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.RS:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.RS a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.RS a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.RS a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.RS:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.ST {
+	width: 400px; height: 300px; margin: 70px auto;
+	perSTective: 1000px;
+}
+.ST a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_221607.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d STace for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.ST:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.ST a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.ST a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.ST a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very tranSTarent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.ST:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.TU {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.TU a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_221711.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.TU:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.TU a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.TU a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.TU a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.TU:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.UV {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.UV a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_221733.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.UV:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.UV a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.UV a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.UV a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.UV:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.VW {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.VW a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_212846.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.VW:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.VW a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.VW a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.VW a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.VW:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.WX {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.WX a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("Screenshot_20180222_211258.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.WX:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.WX a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.WX a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.WX a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.WX:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.XY {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.XY a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("download.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.XY:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.XY a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.XY a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.XY a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.XY:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+	background: #544; /*fallback*/
+	background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.YZ {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.YZ a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url("DDD.png");
+
+
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.YZ:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.YZ a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.YZ a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.YZ a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.YZ:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
