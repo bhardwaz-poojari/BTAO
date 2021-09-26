@@ -1,0 +1,152 @@
+ #entrance
+    {
+        width: 100%;
+        padding: 0 0 0 0;
+        
+    }
+    #entrance h1
+    {
+        margin: 0 0 15px 0;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 56px;
+        color: #d2e0ed;
+        font-family: "Poppins", sans-serif;
+        
+    }
+
+    #entrance h2
+    {
+        color: #fff;
+        margin-bottom: 30px;
+        font-size: 22px;
+        
+    }
+    #entrance .btn-get-started
+    {
+        color: #213b52;
+        border-radius: 50px;
+        padding: 8px 35px 10px 35px;
+        border: 2px solid #fdc134;
+        transition: all ease-in-out 0.3s;
+        display: inline-block;
+        background: #fdc134;
+        
+    }
+        #entrance .btn-get-started:hover
+        {
+            background: transparent;
+            color: #fff;
+            
+        }
+      @media (max-width: 991px)
+        {
+            #entrance .entrance-img
+            {
+                text-align: center;
+                
+            }
+            #entrance .entrance-img img {
+                width: 50%;
+                
+            }
+            
+        }
+        @media (max-width: 768px)
+        {
+            #entrance
+            {
+                -moz-text-align-last: center;
+                text-align-last: center;
+                
+            }
+            #entrance h1
+            {
+                font-size: 28px;
+                line-height: 36px;
+                
+            }
+            #entrance h2
+            {
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 30px;
+                
+            }
+            #entrance .entrance-img img
+            {
+                margin-top:40px;
+                width: 70%;
+                
+            }
+            
+        }
+        @media (max-width: 575px)
+        {
+            #entrance .entrance-img img
+            {
+                width: 80%;
+                
+            }
+            
+        }
+        #branches  a {
+        margin: 20px;
+        -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+        transition: color 1s; /* For modern browsers */
+    }
+  
+    
+    .branch a
+    {
+        color:#FF851B;
+        cursor:pointer;
+        font-family: 'ABeeZee', sans-serif;
+    }
+    .branch a:hover
+    {
+    background:rgb(19,0,26);
+    color:white;
+    font-family: 'ABeeZee', sans-serif;
+  
+        
+    }
+   
+ /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(19,0,26,0.5);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(19,0,26); 
+}
+.chatbot {
+          background:rgb(19,0,26);
+          position:relative;
+         
+        }
+
+  df-messenger {
+      margin-top:10%;
+   --df-messenger-bot-message: #878fac;
+   --df-messenger-button-titlebar-color: rgb(19,0,26);
+   --df-messenger-chat-background-color: #fafafa;
+   --df-messenger-font-color: white;
+   --df-messenger-send-icon: #878fac;
+   --df-messenger-user-message: #479b3d;
+  }
+  
+  
