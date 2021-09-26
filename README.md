@@ -7,9 +7,8 @@
 - Collection of Innovative Apps
 - Objective of Btech Subjects
 - Materials of Btech Subjects
-## Screenshots
- ![1](https://user-images.githubusercontent.com/36434065/134815471-ce51c626-16ad-4231-8949-68b82ca93aa5.jpg)
-![4](https://user-images.githubusercontent.com/36434065/134815481-60aa659f-5251-4d63-9802-1b6b6079e5e8.jpg) 
+## Home Page
+ ![1](https://user-images.githubusercontent.com/36434065/134815471-ce51c626-16ad-4231-8949-68b82ca93aa5.jpg) 
 ## Technologies Used
 - Front-End : HTML5, CSS3, Java-Script, Bootstrap and [MDB](https://mdbootstrap.com/)
 - Back-End  : MySQL (4.9) and PHP (7.1.32)
