@@ -7,6 +7,8 @@
 - Collection of Innovative Apps
 - Objective of Btech Subjects
 - Materials of Btech Subjects
+- Predefined Quality Content
+- SEO Optimized
 ## Home Page
  ![1](https://user-images.githubusercontent.com/36434065/134815471-ce51c626-16ad-4231-8949-68b82ca93aa5.jpg) 
 ## Technologies Used
