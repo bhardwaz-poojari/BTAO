@@ -15,4 +15,4 @@
 - Front-End : HTML5, CSS3, Java-Script, Bootstrap and [MDB](https://mdbootstrap.com/)
 - Back-End  : MySQL (4.9) and PHP (7.1.32)
  > #### If you like this project then please  share it to the interested people !
- I'm available in [Instagram](https://www.instagram.com/rahulvijayam), [LinkedIn](https://in.linkedin.com/in/RahulVijayam), and [Twitter](https://twitter.com/RahulVijayam)
+ I'm available in [Instagram](https://www.instagram.com/bhardwaz_42) and [LinkedIn](https://in.linkedin.com/in/bhardwazpoojari)
